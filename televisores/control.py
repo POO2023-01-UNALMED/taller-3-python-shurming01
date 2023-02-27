@@ -19,7 +19,7 @@ class Control:
         self.tv.canalDown()
 
     def volumenUp(self):
-        self.tv.volumenDown()
+        self.tv.volumenUp()
        
     def volumenDown(self):
         self.tv.volumenDown()
