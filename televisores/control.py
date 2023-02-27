@@ -7,7 +7,7 @@ class Control:
         self.tv = None
 
     def turnOn(self): # Encendido
-        self.tv.turnOn = True
+        self.tv.turnOn()
 
     def turnOff(self): # Apagado
         self.tv.turnOff()
@@ -29,7 +29,7 @@ class Control:
     
     def enlazar(self, tv):
         self.tv = tv
-       
+        tv.control = self
 
     def getTv(self):
         return self.tv
