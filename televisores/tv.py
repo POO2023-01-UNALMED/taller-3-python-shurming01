@@ -27,7 +27,7 @@ class TV:
         return self._precio
     
     def setVolumen(self, volumen):
-        if self.estado == True:
+        if self._estado == True:
             if (self._volumen >= 0) and (self._volumen <= 7):
                 self._volumen = volumen
         
@@ -35,8 +35,8 @@ class TV:
         return self._volumen
     
     def setCanal(self, canal):
-        if self.estado == True:
-            if (self.canal >= 1) and (self.canal < 120):
+        if self._estado == True:
+            if (self._canal >= 1) and (self._canal < 120):
                 self._canal = canal
         
     def getCanal(self):
@@ -52,25 +52,25 @@ class TV:
         return self._estado
 
     def turnOn(self): # Encendido
-        self.estado = True
+        self._estado = True
 
     def turnOff(self): # Apagado
-        self.estado = False
+        self._estado = False
 
     def canalUp(self):
-        if self.estado == True:
-            if (self.canal >= 1) and (self.canal < 120):
-                self.canal += 1
+        if self._estado == True:
+            if (self._canal >= 1) and (self._canal < 120):
+                self._canal += 1
     def canalDown(self):
-        if self.estado == True:
-            if (self.canal > 1) and (self.canal <= 120):
-                self.canal -= 1
+        if self._estado == True:
+            if (self._canal > 1) and (self._canal <= 120):
+                self._canal -= 1
 
     def volumenUp(self):
-        if self.estado == True:
+        if self._estado == True:
             if (self._volumen >= 0) and (self._volumen < 7):
                 self._volumen += 1
     def volumenDown(self):
-        if self.estado == True:
+        if self._estado == True:
             if (self._volumen >= 0) and (self._volumen <= 7):
                 self._volumen -= 1
