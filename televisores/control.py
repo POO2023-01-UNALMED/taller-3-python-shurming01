@@ -24,7 +24,7 @@ class Control:
     def volumenDown(self):
         self.tv.volumenDown()
 
-    def setCanl(self, canal):
+    def setCanal(self, canal):
         self.tv.setCanal = canal
     
     def enlazar(self, tv):
