@@ -43,10 +43,10 @@ class TV:
         return self._canal
     @classmethod
     def setNumTV(cls, cantidad):
-        cls.numTV = cantidad
+        cls._numTV = cantidad
     @classmethod
     def getNumTV(cls): #
-        return cls.numTV
+        return cls._numTV
     
     def getEstado(self):
         return self._estado
